@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Curso de JavaScript Clase 13</title>
+    <meta name='viewport' content='width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button id="newTask" class="new-task"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></svg> <span>Nueva Tarea</span></button>
+
+    <div id="form" class="form">
+        <div id="taskWrapper">
+            <div>
+                <input type="text" class="task" id="task" autocomplete="off" placeholder="¿En qué estás trabajando?" required>
+            </div>
+            <div>
+                <input type="text" class="project" id="project" autocomplete="off" placeholder="¿Para qué proyecto?" required>
+            </div>
+            <div>
+                <input type="number" class="hour" id="hour" autocomplete="off" placeholder="¿Cúantas horas te llevó?" required>
+            </div>
+            <div>
+                <button class="submit" id="submit" onclick="registerData()">Añadir tarea</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tasks-wrapper" id="tagsWrapper">
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
